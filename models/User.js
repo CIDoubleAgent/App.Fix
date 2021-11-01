@@ -1,13 +1,18 @@
-const { DataTypes } = require("sequelize/types");
-const { UPSERT } = require("sequelize/types/lib/query-types");
+const { DataTypes, Model } = require("sequelize");
+const sequelize = require('../config/connection');
+
+class User extends Model {};
 
 User.init({
-    firstName: {
+    userName: {
         type: DataTypes.STRING,
+        unique: true,
         allowNull: false
     },
-    lastName: {
-        type: DataTypes.STRING,
+    user_id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
         allowNull: false
     },
     email: {
@@ -18,5 +23,6 @@ User.init({
         type: DataTypes.STRING,
         allowNull: false
     }
+}, { sequelize, modelName: "User" });
 
-})
+module.exports = User;
