@@ -28,8 +28,9 @@ router.get("/signUp", (req, res) => {
 router.post("/signUp", (req, res) => {
     let { username, password } = req.body;
     User.create({ username, password })
-    .then(function() {
+    .then(function(data) {
         res.redirect("/auth/signIn");
+        console.log(data);
     }).catch(function(err) {
         console.error(err);
         res.redirect("/auth/signUp");
