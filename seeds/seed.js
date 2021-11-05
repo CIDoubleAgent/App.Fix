@@ -7,7 +7,8 @@ const seedDatabase = async () => {
     await Blog.sync();
     await User.sync();
 
-    const blog = await Blog.bulkCreate([{ contents:"These are the contents of a blog post", postTitle: "Post one", userName: "AvidPoster", dateCreated: "1635518563100"  }]);
+    const blog = await Blog.bulkCreate([{ contents:"These are the contents of a blog post", postTitle: "Post one", username: "thefastestman", dateCreated: new Date() }]);
+    const user = await User.bulkCreate([{ username:"thefastestman", email:"dfastman@fakemail.com", password:"password" }])
 };
 
 seedDatabase();
