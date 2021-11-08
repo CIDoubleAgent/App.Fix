@@ -1,15 +1,15 @@
 const router = require('express').Router();
 
 router.get("/", (req, res) => {
-    res.render("blog.handlebars")
+    res.render("post.handlebars")
 });
 
 router.post("/", (req, res) => {
-    res.render("blog.handlebars")
+    res.render("post.handlebars")
 });
 
 router.get("/:id", (req, res) => {
-    res.render("blog.handlebars")
+    res.render("post.handlebars")
 });
 
 router.put("/:id", (req, res) => {

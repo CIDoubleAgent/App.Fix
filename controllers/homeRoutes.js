@@ -1,9 +1,9 @@
 const router = require('express').Router();
-const dummyBlogs = [{name:"Dr. Seuss"}];
+const dummyPosts = [{name:"Dr. Seuss"}];
 
 router.get('/', async (req, res) => {
     res.render('homepage', {
-        blogs: dummyBlogs
+        posts: dummyPosts
     });
 })
 
