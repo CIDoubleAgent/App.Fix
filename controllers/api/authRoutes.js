@@ -1,39 +1,39 @@
 const router = require('express').Router();
 const User = require('../../models/User');
 
-router.get("/signIn", (req, res) => {
-    res.render("signIn.handlebars")
+router.get("/login", (req, res) => {
+    res.render("login.handlebars")
 });
 
-router.post("/signIn", async (req, res) => {
+router.post("/login", async (req, res) => {
     console.log(req.body);
     let { username, password } = req.body;
     let userData = await User.findOne({where: {username}});
     if (userData == null) {
-        console.log('Login failed');
-        res.redirect("/auth/signIn");
+        console.log('login failed');
+        res.redirect("/auth/login");
     } else if (password == userData.password) {
         res.redirect("/dash");
         // TODO: send the user a cookie
     } else {
-        console.log('Login failed');
-        res.redirect("/auth/signIn");
+        console.log('login failed');
+        res.redirect("/auth/login");
     }
 });
 
-router.get("/signUp", (req, res) => {
-    res.render("signUp.handlebars");
+router.get("/signup", (req, res) => {
+    res.render("signup.handlebars");
 });
 
-router.post("/signUp", (req, res) => {
+router.post("/signup", (req, res) => {
     let { username, password } = req.body;
     User.create({ username, password })
     .then(function(data) {
-        res.redirect("/auth/signIn");
+        res.redirect("/auth/login");
         console.log(data);
     }).catch(function(err) {
         console.error(err);
-        res.redirect("/auth/signUp");
+        res.redirect("/auth/signup");
     })
 });
 
