@@ -9,7 +9,7 @@ User.init({
         unique: true,
         allowNull: false
     },
-    user_id: {
+    id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
