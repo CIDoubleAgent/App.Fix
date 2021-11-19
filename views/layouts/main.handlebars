@@ -16,10 +16,15 @@
     </nav>
     <div class="row">
       <ul id="nav-mobile" class="col s12 align-center">
+        {{#if session.user_id}}
         <a href="/" class="btn waves-effect waves-light cyan-text text-accent-3 blue-grey darken-3">Home</a>
         <a href="/dash" class="btn waves-effect waves-light cyan-text text-accent-3 blue-grey darken-3">Dashboard</a>
-        <a href="/public/js/logout.js" class="btn waves-effect waves-light cyan-text text-accent-3 blue-grey darken-3">Logout</a>
+        <a href="/post" class="btn waves-effect waves-light cyan-text text-accent-3 blue-grey darken-3">Create a Post</a>
+        <a href="/auth/logout" class="btn waves-effect waves-light cyan-text text-accent-3 blue-grey darken-3">Logout</a>
+        {{else}}
+        <a href="/auth/signup" class="btn waves-effect waves-light cyan-text text-accent-3 blue-grey darken-3">Sign Up</a>
         <a href="/auth/login" class="btn waves-effect waves-light cyan-text text-accent-3 blue-grey darken-3">Login</a>
+        {{/if}}
       </ul>
     </div>
 
