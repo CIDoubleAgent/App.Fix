@@ -10,7 +10,7 @@ const seedPosts = async () => {
         {
             postTitle: "Post one",
             postContents: "These are the contents of a post",
-            userId: idCalc(users),
+            user_id: idCalc(users),
             dateCreated: new Date()
         },
     ];
