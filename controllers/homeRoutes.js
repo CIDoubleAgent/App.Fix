@@ -1,10 +1,25 @@
+const { User } = require("../models");
+const Post = require("../models/Post");
 const router = require('express').Router();
-const dummyPosts = [{name:"Dr. Seuss"}];
 
 router.get('/', async (req, res) => {
-    res.render('homepage', {
-        posts: dummyPosts
+    return Post.findAll(
+        { include: {
+            model: User,
+            as: 'user'
+        } }
+    )
+    .then((response) => {
+        const posts = response.map(post => ({
+            ...post.dataValues,
+            user: post.user.dataValues.username
+        }))
+        console.log(posts);
+        res.render('homepage', {
+            posts, session:req.session
+        });
     });
-})
+});
+
 
 module.exports = router;
