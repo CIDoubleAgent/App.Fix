@@ -1,5 +1,8 @@
 # App.Fix
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+## Links
+* Deployed App: https://polar-refuge-49734.herokuapp.com/
+* Github Repo: https://github.com/CIDoubleAgent/App.Fix
 ## Description
 App.Fix is a tech blog app where users can signup, login and leave tech related posts about problems they may be having in their own projects, or just tech related questions.
 ## Table of contents
