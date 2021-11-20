@@ -5,6 +5,7 @@ App.Fix is a tech blog app where users can signup, login and leave tech related 
 ## Table of contents
 * [Installation](#installation)
 * [Usage](#usage)
+* [Screenshots](#screenshots)
 * [How to Contribute](#how-to-contribute)
 * [Tests](#tests)
 * [Liscense](#liscense)
@@ -13,6 +14,10 @@ App.Fix is a tech blog app where users can signup, login and leave tech related 
 Copy files into a local folder, in the terminal run "npm install" in the root directory of the project, then run "npm start" to start the app. Runs on localhost:3001.
 ## Usage
 Click the signup button, enter your information, submit, login, and begin posting. The homepage shows all posts and the dashboard shows only posts by the logged in user.
+## Screenshots
+![app.fix-1](https://github.com/CIDoubleAgent/App.Fix/blob/main/images/app.fix-1.png?raw=true)
+![app.fix-2](https://github.com/CIDoubleAgent/App.Fix/blob/main/images/app.fix-2.png?raw=true)
+![app.fix-3](https://github.com/CIDoubleAgent/App.Fix/blob/main/images/app.fix-3.png?raw=true)
 ## How to contribute
 There are no contribution guidelines for this project.
 ## Tests
