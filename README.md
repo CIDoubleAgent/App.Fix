@@ -12,7 +12,7 @@ App.Fix is a tech blog app where users can signup, login and leave tech related 
 * [How to Contribute](#how-to-contribute)
 * [Tests](#tests)
 * [Liscense](#liscense)
-* [Questions](#questions)
+* [Contact Me](#contact-me)
 ## Installation
 Copy files into a local folder, in the terminal run "npm install" in the root directory of the project, then run "npm start" to start the app. Runs on localhost:3001.
 ## Usage
@@ -36,6 +36,7 @@ There are no tests for this project
 
     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
     EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-## Questions
+## Contact Me
 * GitHub username: [CIDoubleAgent](https://github.com/CIDoubleAgent)
-* Contact email: This user's email is private
+* Contact email: [nzabkar51@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nzabkar51@gmail.com)
+* Profile Page: [Click Here](https://cidoubleagent.github.io/react-portfolio/)
